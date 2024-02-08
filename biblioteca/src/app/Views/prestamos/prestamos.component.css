@@ -1,0 +1,10 @@
+/* prestamos.component.css */
+.mat-elevation-z8 {
+  min-width: 1000px; /* Ajusta esto según tus necesidades */
+  align-items: center;
+  overflow-x: auto; /* Asegura que el contenido pueda desplazarse horizontalmente si es necesario */
+  align-items: center; /* Centra los elementos hijos horizontalmente */
+  max-width: 90%; /* Ajusta el ancho máximo según necesites */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+

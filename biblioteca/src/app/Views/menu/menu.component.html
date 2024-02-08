@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Hansa</title>
+</head>
+<body>
+    <header class="header">
+        <h1>BIBLIOTECA HANSA</h1>
+    </header>
+    <section class="content">
+      <div class="card">
+          <img src="assets/img/2.jpg" alt="Existencias" width="400" height="400">
+          <h2>EXISTENCIAS</h2>
+          <p>{{ totalLibros }} LIBROS</p>
+          <a href='/libros' class="button">Ver Libros</a>
+      </div>
+      <div class="card">
+          <img src="assets/img/1.jpg" alt="Libros Prestados Mes" width="400" height="400">
+          <h2>LIBROS PRESTADOS MES</h2>
+          <p>200 LIBROS</p>
+          <a href='/reporte/librospormes' class="button">Reporte Libros por Mes</a>
+      </div>
+      <div class="card">
+          <img src="assets/img/3.jpg" alt="Libros Prestado Semanales" width="400" height="400">
+          <h2>LIBROS PRESTADOS SEMANALES</h2>
+          <p>50 LIBROS</p>
+          <a href='/reporte/librosporsemana' class="button">Reporte Libros por Semana</a>
+      </div>
+  </section>
+
+
+    <section class="footer">
+      <a href="/prestamos" class="button">DEVOLVER LIBRO</a>
+      <a href="/clientes" class="button">PRESTAR LIBRO</a>
+  </section>
+
+</body>
+</html>

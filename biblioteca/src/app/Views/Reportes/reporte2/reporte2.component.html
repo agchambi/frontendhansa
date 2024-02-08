@@ -1,0 +1,19 @@
+<h1>Libros prestados por mes</h1>
+<div class="container mt-3">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Año</th>
+        <th>Mes</th>
+        <th>Libros prestados</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let element of dataSource.data">
+        <td>{{ element.year }}</td>
+        <td>{{ element.month }}</td>
+        <td>{{ element.total }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

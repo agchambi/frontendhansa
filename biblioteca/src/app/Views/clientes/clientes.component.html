@@ -1,0 +1,20 @@
+<!-- prestamo-libro-form.component.html -->
+<form [formGroup]="prestamoForm" (ngSubmit)="onSubmit()" class="container mt-4">
+  <div class="mb-3">
+    <label for="libro_id" class="form-label">ID del Libro</label>
+    <input id="libro_id" type="text" class="form-control" formControlName="libro_id">
+  </div>
+  <div class="mb-3">
+    <label for="cliente_id" class="form-label">ID del Cliente</label>
+    <input id="cliente_id" type="text" class="form-control" formControlName="cliente_id">
+  </div>
+  <div class="mb-3">
+    <label for="fecha_prestamo" class="form-label">Fecha del Préstamo</label>
+    <input id="fecha_prestamo" type="date" class="form-control" formControlName="fecha_prestamo">
+  </div>
+  <div class="mb-3">
+    <label for="dias_prestamo" class="form-label">Días de Préstamo</label>
+    <input id="dias_prestamo" type="number" class="form-control" formControlName="dias_prestamo">
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="!prestamoForm.valid">Registrar Préstamo</button>
+</form>

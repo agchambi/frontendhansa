@@ -1,0 +1,20 @@
+<!-- reporte1.component.html -->
+<div class="container mt-3">
+  <h2>Reporte de Préstamos por Semana</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Año</th>
+        <th>Semana</th>
+        <th>Total Préstamos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prestamo of datosPrestamos">
+        <td>{{ prestamo.year }}</td>
+        <td>{{ prestamo.week }}</td>
+        <td>{{ prestamo.total }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
